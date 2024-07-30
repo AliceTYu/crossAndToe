@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/crossAndToe/static/css/main.dbea6f17.css",
-    "main.js": "/crossAndToe/static/js/main.bf902157.js",
+    "main.css": "/crossAndToe/static/css/main.0b6571b5.css",
+    "main.js": "/crossAndToe/static/js/main.3192c435.js",
     "index.html": "/crossAndToe/index.html",
-    "main.dbea6f17.css.map": "/crossAndToe/static/css/main.dbea6f17.css.map",
-    "main.bf902157.js.map": "/crossAndToe/static/js/main.bf902157.js.map"
+    "main.0b6571b5.css.map": "/crossAndToe/static/css/main.0b6571b5.css.map",
+    "main.3192c435.js.map": "/crossAndToe/static/js/main.3192c435.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbea6f17.css",
-    "static/js/main.bf902157.js"
+    "static/css/main.0b6571b5.css",
+    "static/js/main.3192c435.js"
   ]
 }
