@@ -2,6 +2,7 @@ import { useState } from "react"
 import { SYMBOL_O, SYMBOL_X } from "../unit/type"
 
 export function useGameState(){
+    // const [stepArray, setStepArray] = useState([[null, null, null], [null, null, null], [null, null, null]])
     const [stepArray, setStepArray] = useState([null, null, null, null, null, null, null, null, null])
     const [currentStep, setCurrentStep] = useState(SYMBOL_O)
     const [winnerStep, setWinnerStep] = useState()
@@ -64,7 +65,6 @@ export function useGameState(){
     currentStep,
     winnerStep,
     clickBtn,
-    computWinner,
     winnerSymbol,
     resetPlay
   }
