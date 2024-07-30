@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import GameInfo from './components/GameInfo';
+import GameStep from './components/GameStep';
+import { useGameState } from './hooks/useGameState';
 
 function App() {
+  const { stepArray, currentStep, winnerStep, clickBtn, computWinner, winnerSymbol, resetPlay } = useGameState()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='AppBlock'>
+        <GameInfo stepArray={stepArray} winnerSymbol={winnerSymbol} currentStep={currentStep} winnerStep={winnerStep}/>
+        <div className='blocks'>
+          {stepArray.map((symbol, index) => (
+            <GameStep symbol={symbol} isWinner={winnerStep?.includes(index)} onClick={() => clickBtn(index)} />
+          ))}
+        </div>
+        <div className='blockBtn'>
+          <button className='btnReset' onClick={resetPlay}>Сброс</button>
+        </div>
+      </div>
     </div>
   );
 }
